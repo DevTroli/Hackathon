@@ -1,0 +1,95 @@
+$width: 640px;
+
+@use "variables.scss";
+
+.event{
+    &--frontend {
+        background-image: linear-gradient(variables.$Blue1 , variables.$Blue2);
+    }
+    &--ui-ux {
+        background-image: linear-gradient(variables.$Blue2 , variables.$Rose);
+    }
+    &--data-science {
+        background-image: linear-gradient(variables.$Rose , variables.$Yellow);
+    }
+    &--backend {
+        background-image: linear-gradient(variables.$Yellow , variables.$Rose);
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+            gap: 40px;
+        }
+    }
+
+    &__container {
+        padding-top: 40px;
+    }
+    
+    &__details {
+        display: flex;
+       
+        &__container {
+         font-weight: bold;
+        }
+      
+        &__image {
+          width: 100%;
+          max-width: 350px;
+          display: flex;
+          border-radius: 8px;
+          padding-bottom: 60px;
+        }
+      
+        &__title {
+          font-size: 22px;
+          font-weight: bold;
+          color: variables.$colorText;
+          padding-bottom: 24px;  
+        }
+    
+        &__text {
+          font-size: 16px;
+          color: variables.$colorText;
+          display: flex;
+          flex-direction: column;
+          padding: 16px 40px 24px 0px;
+        }
+    }
+    
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media (max-width: $width) {
+        .event__text-container {
+            display: block;
+        }
+    
+        &__details {
+            display: block;
+            margin-right: 0px;
+            padding-right: 0px;
+            margin-bottom: 16px;
+    
+    
+            &__text {
+                margin-right: 0px;
+                padding-right: 0px;
+                padding-bottom: 16px;
+                
+            }
+        }
+    
+        &__image {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
