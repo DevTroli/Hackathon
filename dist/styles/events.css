@@ -1,0 +1,85 @@
+.event--frontend {
+  background-image: linear-gradient(#1b6ca7, #442bdb);
+}
+
+.event--ui-ux {
+  background-image: linear-gradient(#442bdb, #89223b);
+}
+
+.event--data-science {
+  background-image: linear-gradient(#89223b, #9c791d);
+}
+
+.event--backend {
+  background-image: linear-gradient(#9c791d, #89223b);
+}
+
+.event--image-left .container {
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.event__container {
+  padding-top: 40px;
+}
+
+.event__details {
+  display: flex;
+}
+
+.event__details__container {
+  font-weight: bold;
+}
+
+.event__details__image {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.event__details__title {
+  color: #fff;
+  padding-bottom: 24px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.event__details__text {
+  color: #fff;
+  flex-direction: column;
+  padding: 16px 40px 24px 0;
+  font-size: 16px;
+  display: flex;
+}
+
+.event__text-container {
+  flex-direction: column;
+  display: flex;
+}
+
+@media (width <= 640px) {
+  .event .event__text-container {
+    display: block;
+  }
+
+  .event__details {
+    margin-bottom: 16px;
+    margin-right: 0;
+    padding-right: 0;
+    display: block;
+  }
+
+  .event__details__text {
+    margin-right: 0;
+    padding-bottom: 16px;
+    padding-right: 0;
+  }
+
+  .event__image {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=events.css.map */

@@ -1,0 +1,1 @@
+{"mappings":"","sources":["src/styles/variables.scss"],"sourcesContent":["$colorText:#ffffff;\r\n$colorText2: #000000;\r\n\r\n$Blue1:#1B6CA7;\r\n$Blue2:#442BDB;\r\n$puple: #972adb;\r\n$Rose: #89223B;\r\n$Yellow: #9C791D;\r\n"],"names":[],"version":3,"file":"variables.css.map","sourceRoot":"/__parcel_source_root/"}
